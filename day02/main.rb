@@ -73,6 +73,7 @@ def determine_my_shape_to_force_outcome(opponent_shape, outcome)
 end
 
 if __FILE__ == $0
-  puts "Part 1: #{solve_part_one("day02/input.txt")}" # 12740
-  puts "Part 2: #{solve_part_two("day02/input.txt")}" # 11980
+  day = File.dirname(__FILE__)
+  puts "Part 1: #{solve_part_one("#{day}/input.txt")}" # 12740
+  puts "Part 2: #{solve_part_two("#{day}/input.txt")}" # 11980
 end

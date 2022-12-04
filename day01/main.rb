@@ -27,6 +27,7 @@ def parse_file_and_determine_calories_per_elf(file)
 end
 
 if __FILE__ == $0
-  puts "Part 1: #{solve_part_one("day01/input.txt")}" # 72070
-  puts "Part 2: #{solve_part_two("day01/input.txt")}" # 211805
+  day = File.dirname(__FILE__)
+  puts "Part 1: #{solve_part_one("#{day}/input.txt")}" # 72070
+  puts "Part 2: #{solve_part_two("#{day}/input.txt")}" # 211805
 end
